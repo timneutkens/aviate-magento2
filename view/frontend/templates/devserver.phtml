@@ -1,0 +1,12 @@
+<?php /** @var $block \WeProvide\WePack\Block\DevServer */ ?>
+<?php $fileTypes = $this->getFiles(); ?>
+<?php foreach($fileTypes as $type => $files): ?>
+  <?php foreach($files as $file): ?>
+    <?php if($type === 'css'): ?>
+      <link href="<?php echo $file; ?>" type="text/css" rel="stylesheet">
+    <?php endif; ?>
+    <?php if($type === 'js'): ?>
+      <script src="<?php echo $file; ?>"></script>
+    <?php endif; ?>
+  <?php endforeach; ?>
+<?php endforeach; ?>

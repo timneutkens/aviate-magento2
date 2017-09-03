@@ -1,0 +1,46 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "73e053d7abb3e43511bf7d3c4f1dde12",
+    "packages": [
+        {
+            "name": "weprovide/aviate",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../aviate-php",
+                "reference": "8af4ad81ea39bf541a05295c85dc87695fee69f5",
+                "shasum": null
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WeProvide\\Aviate\\": "."
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tim Neutkens",
+                    "email": "tim@weprovide.com"
+                }
+            ],
+            "description": "Connector class for Aviate compiler"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "alpha",
+    "stability-flags": {
+        "weprovide/aviate": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

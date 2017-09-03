@@ -1,0 +1,24 @@
+{
+    "name": "weprovide/aviate-magento2",
+    "description": "Aviate implementation for Magento 2",
+    "minimum-stability": "alpha",
+    "authors": [
+        {
+            "name": "Tim Neutkens",
+            "email": "tim@weprovide.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"WeProvide\\Aviate\\Magento2\\": "."},
+        "files": [
+            "registration.php"
+        ]
+    },
+    "repositories": [{
+        "type": "path",
+        "url": "../aviate-php"
+    }],
+    "require": {
+
+    }
+}
