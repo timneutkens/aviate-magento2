@@ -2,7 +2,7 @@
     "name": "weprovide/aviate-magento2",
     "description": "Aviate implementation for Magento 2",
     "license": "MIT",
-    "minimum-stability": "alpha",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Tim Neutkens",
@@ -15,11 +15,7 @@
             "registration.php"
         ]
     },
-    "repositories": [{
-        "type": "path",
-        "url": "../aviate-php"
-    }],
     "require": {
-
+        "weprovide/aviate": "^0.0.1"
     }
 }
