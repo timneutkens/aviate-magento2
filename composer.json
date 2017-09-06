@@ -1,6 +1,7 @@
 {
     "name": "weprovide/aviate-magento2",
     "description": "Aviate implementation for Magento 2",
+    "license": "MIT",
     "minimum-stability": "alpha",
     "authors": [
         {
