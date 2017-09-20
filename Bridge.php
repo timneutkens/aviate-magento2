@@ -3,6 +3,7 @@ namespace WeProvide\Aviate\Magento2;
 
 use Magento\Framework\View\Design\ThemeInterface;
 use Magento\Framework\View\DesignInterface;
+use Magento\Framework\View\Element\Template;
 use Magento\Store\Model\ScopeInterface;
 use WeProvide\Aviate\Aviate;
 use Magento\Framework\App\State;
@@ -16,14 +17,16 @@ class Bridge extends Aviate {
     protected $storeManager;
     protected $scopeConfig;
     protected $themeProvider;
+    protected $template;
 
-    public function __construct(Context $context, DirectoryList $directoryList, ThemeProvider $themeProvider) {
+    public function __construct(Context $context, DirectoryList $directoryList, ThemeProvider $themeProvider, Template $template) {
         $state = $context->getAppState();
         $this->storeManager = $context->getStoreManager();
         $this->scopeConfig = $context->getScopeConfig();
 
         $this->directoryList = $directoryList;
         $this->themeProvider = $themeProvider;
+        $this->template = $template;
 
         $this->developerMode = $state->getMode() === $state::MODE_DEVELOPER;
     }
@@ -61,7 +64,7 @@ class Bridge extends Aviate {
             return $types;
         }
 
-        $types['css'][] = $this->getViewFileUrl('dist/' . $themePath . '.css' );
+        $types['css'][] = $this->template->getViewFileUrl('dist/' . $themePath . '.css' );
 
         return $types;
     }
