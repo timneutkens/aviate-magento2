@@ -16,6 +16,6 @@
         ]
     },
     "require": {
-        "weprovide/aviate": "^0.0.1"
+        "weprovide/aviate": "^0.0.2"
     }
 }

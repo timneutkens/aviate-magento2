@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "75284e33b1a96b941723c9239c41562e",
+    "content-hash": "2c3e77b6f5af30f317a8bb5c119ec4fd",
     "packages": [
         {
             "name": "weprovide/aviate",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/timneutkens/aviate-php.git",
-                "reference": "76731af0ccf416b6251b6284cda9f12c435420af"
+                "reference": "73ceced0535b65770ff6b2569e7698a0085d4479"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/timneutkens/aviate-php/zipball/76731af0ccf416b6251b6284cda9f12c435420af",
-                "reference": "76731af0ccf416b6251b6284cda9f12c435420af",
+                "url": "https://api.github.com/repos/timneutkens/aviate-php/zipball/73ceced0535b65770ff6b2569e7698a0085d4479",
+                "reference": "73ceced0535b65770ff6b2569e7698a0085d4479",
                 "shasum": ""
             },
             "type": "library",
@@ -37,7 +37,7 @@
                 }
             ],
             "description": "Connector class for Aviate compiler",
-            "time": "2017-09-06T07:54:50+00:00"
+            "time": "2017-09-20T06:55:00+00:00"
         }
     ],
     "packages-dev": [],
