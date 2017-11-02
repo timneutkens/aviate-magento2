@@ -19,7 +19,12 @@ class Bridge extends Aviate {
     protected $themeProvider;
     protected $template;
 
-    public function __construct(Context $context, DirectoryList $directoryList, ThemeProvider $themeProvider, Template $template) {
+    public function __construct(
+        Context $context,
+        DirectoryList $directoryList,
+        ThemeProvider $themeProvider,
+        Template $template
+    ) {
         $state = $context->getAppState();
         $this->storeManager = $context->getStoreManager();
         $this->scopeConfig = $context->getScopeConfig();

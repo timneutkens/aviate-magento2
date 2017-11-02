@@ -8,7 +8,11 @@ use WeProvide\Aviate\Magento2\Bridge as AviateBridge;
 class DevServer extends Template {
     protected $aviate;
 
-    public function __construct(Context $context, AviateBridge $aviate, array $data = []) {
+    public function __construct(
+        Context $context, 
+        AviateBridge $aviate, 
+        array $data = []
+    ) {
         $this->aviate = $aviate;
         parent::__construct($context, $data);
     }
