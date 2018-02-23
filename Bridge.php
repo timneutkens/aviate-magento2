@@ -65,7 +65,7 @@ class Bridge extends Aviate {
 
         if($this->isDevMode()) {
             $types['js'][] = $this->getDevServerUrl($themePath . '.js');
-
+            $types['css'][] = $this->getDevServerUrl($themePath . '.css');
             return $types;
         }
 
